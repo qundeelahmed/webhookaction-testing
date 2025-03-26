@@ -1,0 +1,19 @@
+# This is basic workflow just for testing purpose
+
+
+name: Testing Workflow
+
+on: workflow_dispatch
+
+jobs:
+  first-testing-job:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Print my name
+        run: echo qundeel ahmed
+
+      - name: Print my daughters name
+        run: echo hanfa and hoorab
+
+        
