@@ -15,7 +15,9 @@ jobs:
     steps:
       # We can also name our step
       - name: Hello World Step
-        run: echo Hello World
+        run: |
+          echo Hello World
+          echo Qundeel Ahmed
 
       - name: Get current directory of step
         run: pwd
