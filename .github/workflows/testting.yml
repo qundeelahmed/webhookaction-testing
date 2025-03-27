@@ -1,19 +1,24 @@
-# This is basic workflow just for testing purpose
+# First name your workflow
 
+name: 2nd Day Testing of my worflow
+# Basically we need to set the event trigger for over workflow
+on: workflow_dispatch 
 
-name: Testing Workflow
-
-on: workflow_dispatch
+# We can set multiple jobs and jobs runs in parallel and sequentials
+# We can also name our jobs without using key 
+# We need to set in which runner this job will run
 
 jobs:
-  first-testing-job:
+  first-job:
     runs-on: ubuntu-latest
+    # We can set multiple steps 
+    steps:
+      # We can also name our step
+      - name: Hello World Step
+        run: echo Hello World
 
-    steps: 
-      - name: Print my name
-        run: echo qundeel ahmed
+      - name: Get current directory of step
+        run: pwd
 
-      - name: Print my daughters name
-        run: echo hanfa and hoorab
-
-        
+      - name: list down all files
+        run: ls
